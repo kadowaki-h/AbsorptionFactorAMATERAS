@@ -1,0 +1,63 @@
+  omp_set_dynamic(.false.)
+  omp_get_max_threads() =          6
+  omp_get_num_procs() =         12
+  omp_get_nested() =          F
+  omp_get_dynamic() =          F
+  parallel_do_unit =      1000
+
+   test of mod_AbsorptionFactorIN5.f90,  AMATERAS,  012605.spe
+
+  wave_length (A) =   6.966346    
+  k_in (A**^{-1}) =  0.9019341    
+
+  direction parallel to u = UT(1:3) =   1.414214      -1.000000       0.000000    
+  direction parallel to v = VT(1:3) =   1.000000       1.414214       0.000000    
+  UT(1:3)=  0.8164966     -0.5773503       0.000000    
+  VT(1:3)=  0.5773503      0.8164966       0.000000    
+  WT(1:3)=   0.000000       0.000000       1.000000    
+
+  linear absorption coefficients for k_0 = 3.494158 (A^{-1})
+   mu_in_absorp   mu_in_incoh  (cm^{-1}) incoming
+  0.4512000      0.4400000E-01
+   mu_out_absorp   mu_out_incoh  (cm^{-1}) outgoing
+  0.4512000      0.4400000E-01
+
+   integration limits (cm) and divisions
+  X1,X2,NX= -0.1050000      0.1050000       36
+  Y1,Y2,NY=  -1.005000       1.005000      150
+  Z1,Z2,NZ= -0.1550000      0.1550000       41
+
+  number of planes = NPL=    4
+  PLA(1,I)*x+PLA(2,I)*y+PLA(3,I)*z >= PLB(I) (cm) (inside sample)
+   I=    1
+   0.000000    *x +  -1.000000    *y +   0.000000    *z >=  -1.000000    
+   I=    2
+   0.000000    *x +   1.000000    *y +   0.000000    *z >=  -1.000000    
+   I=    3
+  -1.000000    *x +   0.000000    *y +   0.000000    *z >= -0.9500000E-01
+   I=    4
+   1.000000    *x +   0.000000    *y +   0.000000    *z >= -0.9500000E-01
+
+  number of cylinders = NCYL=    1
+  a point on the cylinder axis (cm) = CYLC(1:3,J)
+  a vector along the cylinder axis (no dim) = CYLD(1:3,J)
+  radius of the cylinder  (cm) = CYLR(J)
+   J=    1
+  CYLC=   0.000000       0.000000       0.000000    
+  CYLD=   0.000000       1.000000       0.000000    
+  CYLR=  0.1500000    
+
+  par file name = par_file_name= 012605.par
+  number of detector elements = nd =     29792
+
+  Offset = psi - psi_amateras =    1.000000    
+
+  psi_amateras, Delta_Omega, psi=  -60.00000       59.00000      -59.00000    
+  spe_file_name_in  =012605_in5.spe
+  spe_file_name_out =012605_in5_AC.spe
+
+  number of detector elements = nd =     29792
+  number of energy bins = ne =       181
+  number of nonzero S(Q,E) or error_S(Q,E) = nABS =     28725
+
+  ABS_corr_min, ABS_corr_max =   1.385713       3.739942    
